@@ -1,2 +1,1 @@
-# Property-website
-Property Website for Yoon
+use `yarn start` to start development server

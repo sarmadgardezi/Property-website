@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+@@include('head.html', {"page": "home", "plugins": ["swiper-bundle.min","magnific-popup"]})
+
+<body class="font-ubuntu text-body text-tiny">
+    <div class="overflow-x-hidden">
+        <!-- Header start -->
+
+        <header id="sticky-header" class="fixed left-0 top-[15px] lg:top-[30px] xl:top-[45px] w-full z-10">
+            @@include('header/header-one.html')
+        </header>
+
+        @@include('offcanvas/index.html')
+        <!-- Header end -->
+
+        <!-- Hero section start -->
+
+
+        <section
+            class="bg-no-repeat bg-left-bottom xl:bg-right-bottom bg-contain xl:bg-cover bg-[#FFF6F0] h-[560px] xl:h-[650px] flex flex-wrap items-center relative"
+            style="background-image: url('assets/images/hero/about1.png');">
+            <div class="container">
+                <div class="grid grid-cols-12">
+                    <div class="col-span-12">
+                        <div class="max-w-[400px]">
+                            <div class="mb-5"><span class="text-base text-secondary block">About us</span></div>
+                            <h1
+                                class="font-recoleta text-primary text-[36px] sm:text-[50px] md:text-[68px] lg:text-[50px] leading-tight xl:text-2xl title">
+                                About<span class="text-secondary"> Bary.</span>
+                            </h1>
+
+                            <p class="text-base text-[#494949] mt-5">
+                                Huge number of propreties availabe here for buy
+                                and sell, also you can find here co-living property
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img class="absolute left-0 bottom-0" src="assets/images/hero/star.png" alt="icon" width="112" height="138">
+        </section>
+
+        <!-- Hero section end -->
+
+
+        <!-- About section start -->
+        <section class="relative z-[1] mt-[80px] xl:mt-0">
+            <div class="container">
+                <div class="grid grid-cols-12 gap-x-[30px] mb-[-30px] items-center">
+                    <div class="col-span-12 lg:col-span-6 mb-[30px]">
+                        <img class="xl:mt-[-140px] mx-auto" src="assets/images/about/about5.png" alt="about image">
+                    </div>
+                    <div class="col-span-12 lg:col-span-6 mb-[30px]">
+                        <span class="text-secondary text-tiny inline-block mb-2">Since 1975</span>
+                        <h2
+                            class="font-recoleta text-primary text-[24px] sm:text-[30px] leading-[1.3888] xl:text-[35px] capitalize mb-[50px]">
+                            We Provide Right Choice of
+                            Properties that You need and have
+                            great opportunity to choose from
+                            thousands of Collection<span class="text-secondary">.</span></h2>
+
+                        @@include('counterup/index-2.html')
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About section end -->
+
+
+
+        <!-- Brand section Start-->
+
+        <div class="brand-section pt-[80px] lg:pt-[120px]">
+            <div class="container">
+                <div class="grid grid-cols-12">
+                    <div class="col-span-12">
+                        <div class="brand-slider">
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <!-- swiper-slide start -->
+                                    @@loop('brand-carousel/index.html', [
+                                    {
+                                    "image": "1",
+                                    },
+                                    {
+                                    "image": "2",
+
+                                    },
+
+                                    {
+                                    "image": "3",
+
+                                    },
+                                    {
+                                    "image": "4",
+                                    },
+                                    {
+                                    "image": "5",
+                                    },
+                                    {
+                                    "image": "3",
+                                    },
+                                    ])
+
+                                    <!-- swiper-slide end-->
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Brand section End-->
+
+
+        <!-- service Section Start-->
+
+        <section class="py-[80px] lg:py-[120px]">
+            <div class="container">
+                <div class="grid grid-cols-12">
+                    <div class="col-span-12">
+                        <div class="mb-[30px] lg:mb-[60px] text-center">
+                            <span class="text-secondary text-tiny inline-block mb-2">Our Services</span>
+                            <h2 class="font-recoleta text-primary text-[24px] sm:text-[30px] xl:text-xl capitalize">
+                                Services that we Provide<span class="text-secondary">.</span></h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[30px]">
+                    @@loop('service/index.html', [
+                    {
+                    "title": "Sale Property",
+                    "image": "1",
+                    "type": "Provide prorpery Sale options opportunity to find the best ",
+                    },
+                    {
+                    "title": "Buy Property",
+                    "image": "2",
+                    "type": "Provide prorpery Sale options opportunity to find the best ",
+                    },
+
+                    {
+                    "title": "Rent Property",
+                    "image": "3",
+                    "type": "Provide prorpery Sale options opportunity to find the best ",
+                    },
+                    {
+                    "title": "Mortgage",
+                    "image": "4",
+                    "type": "Provide prorpery Sale options opportunity to find the best ",
+                    },
+
+                    ])
+                </div>
+            </div>
+        </section>
+
+        <!-- service Section End-->
+
+        <!-- About Us Sectin Start -->
+        <section class="about-section">
+            <div class="container">
+                @@include('about/index.html')
+            </div>
+        </section>
+        <!-- About Us Sectin End -->
+
+
+
+        <!-- Testimonial carousel Start -->
+
+        <section class="testimonial-section bg-white relative z-10 py-[80px] lg:py-[120px]">
+            <div class="container testimonial-carousel-one">
+                <div class="grid items-center grid-cols-12 gap-x-[30px] mb-[-30px]">
+                    <div class="col-span-12 lg:col-span-4 mb-[30px]">
+                        <div class="relative">
+                            <span class="text-secondary text-tiny capitalize inline-block mb-[10px]">Testimonial</span>
+                            <h2
+                                class="font-recoleta text-primary text-[24px] sm:text-[30px] xl:text-xl mb-[20px] max-w-[375px]">
+                                Reviews from
+                                our
+                                happy Clients<span class="text-secondary">.</span></h2>
+                            <p class="max-w-[385px]">Huge number of propreties availabe here for buy,
+                                sell and Rent. Also you find here co-living property so
+                                lots opportunity you have to choose here and enjoy. </p>
+
+                            <!-- If we need navigation buttons -->
+                            <div class="testimonial-pagination hidden sm:block">
+                                <div
+                                    class="swiper-button-prev w-[36px] h-[36px] rounded-full bg-primary  text-white hover:bg-secondary top-auto bottom-[-65px] left-0">
+                                </div>
+                                <div
+                                    class="swiper-button-next w-[36px] h-[36px] rounded-full bg-primary  text-white hover:bg-secondary top-auto bottom-[-65px] left-[56px]">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-span-12 lg:col-span-8 mb-[30px] xl:pl-[35px]">
+                        <div class="swiper -m-[25px] p-[25px]">
+                            <div class="swiper-wrapper">
+                                @@loop('testimonial-carousel/style-three.html', [
+                                {
+                                "image": "1.2",
+                                "title": "Oliver Stephen",
+                                },
+                                {
+                                "image": "3",
+                                "title": "Sun Francisco",
+                                },
+
+                                {
+                                "image": "1.2",
+                                "title": "Oliver Stephen",
+                                },
+
+                                ])
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Testimonial carousel End -->
+
+
+        <!-- Team Section Etart-->
+
+        <section class="team-section overflow-hidden">
+            <div class="container">
+                <div class="grid grid-cols-12">
+                    <div class="col-span-12">
+                        <div class="mb-[30px] lg:mb-[60px] text-center">
+                            <span class="text-secondary text-tiny inline-block mb-2">Our Agents</span>
+                            <h2 class="font-recoleta text-primary text-[24px] sm:text-[30px] xl:text-xl capitalize">Here
+                                is our
+                                Experts<span class="text-secondary">.</span></h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-x-[30px] mb-[-30px]">
+                    <!-- single team start -->
+                    @@loop('team/index.html', [
+                    {
+                    "image": "1",
+                    "type": "Real Estate Agent",
+                    "title": "Albert S. Smith",
+                    },
+                    {
+                    "image": "2",
+                    "type": "Real Estate Broker",
+                    "title": "Amelia Margaret",
+                    },
+
+                    {
+                    "image": "3",
+                    "type": "Real Estate Agent",
+                    "title": "Stephen Kelvin",
+                    },
+                    {
+                    "image": "4",
+                    "type": "Real Estate Broker",
+                    "title": " Michael Richard",
+                    },
+                    ])
+
+                    <!-- single team end-->
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section End-->
+
+
+
+        <!-- News Letter section start -->
+        <section class="pt-[80px] lg:pt-[120px]">
+            <div class="container">
+                <div class="grid grid-cols-1">
+                    <div class="col-span">
+                        @@include('news-letter/index.html')
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- News Letter section End -->
+
+
+        <!-- Footer Start -->
+        <footer class="footer bg-[#ECFAF7] pt-[80px] lg:pt-[200px] pb-[80px] lg:pb-[110px] font-light bg-no-repeat"
+            style="background-image: url('assets/images/footer/pattern.png');">
+            <div class="container">
+                @@include('footer/index.html')
+            </div>
+        </footer>
+        <!-- Footer End -->
+        <a id="scrollUp" class="w-12 h-12 rounded-full bg-primary text-white fixed right-5 bottom-16 flex flex-wrap items-center justify-center transition-all duration-300 z-10" href="#" aria-label="scroll up">
+
+            <svg width="25" height="auto" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M6.101 261.899L25.9 281.698c4.686 4.686 12.284 4.686 16.971 0L198 126.568V468c0 6.627 5.373 12 12 12h28c6.627 0 12-5.373 12-12V126.568l155.13 155.13c4.686 4.686 12.284 4.686 16.971 0l19.799-19.799c4.686-4.686 4.686-12.284 0-16.971L232.485 35.515c-4.686-4.686-12.284-4.686-16.971 0L6.101 244.929c-4.687 4.686-4.687 12.284 0 16.97z"/></svg>
+
+        </a>
+    </div>
+
+
+    @@include('scripts.html', {"page": "home", "plugins":
+    ["swiper-bundle.min","popper.min","jquery.magnific-popup.min","jquery.ajaxchimp.min","parallax.min","jquery.waypoints","jquery.counterup.min"]})
+
+</body>
+
+</html>
